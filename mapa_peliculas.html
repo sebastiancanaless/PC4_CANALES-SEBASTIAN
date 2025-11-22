@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5b2e5f4703098bd8ca729be9231253a0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5b2e5f4703098bd8ca729be9231253a0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5b2e5f4703098bd8ca729be9231253a0 = L.map(
+                "map_5b2e5f4703098bd8ca729be9231253a0",
+                {
+                    center: [14.532066600000002, -17.374611199999997],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_5b2e5f4703098bd8ca729be9231253a0);
+
+            
+
+        
+    
+            var tile_layer_5fd2f23144324375d14ab20d4d359285 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_5fd2f23144324375d14ab20d4d359285.addTo(map_5b2e5f4703098bd8ca729be9231253a0);
+        
+    
+            var marker_990c61e425ecb79b1511aff2a23c0acc = L.marker(
+                [40.721786, -73.997164],
+                {
+}
+            ).addTo(map_5b2e5f4703098bd8ca729be9231253a0);
+        
+    
+        var popup_08dcbd2dcbf096d474b44e3581c8b103 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_9224451104517342987b8a048b362c2c = $(`<div id="html_9224451104517342987b8a048b362c2c" style="width: 100.0%; height: 100.0%;">     <b>The Godfather</b><br>     Director: Francis Ford Coppola<br>     Año: 1972<br>     País(es): Estados Unidos<br>     Género: Crimen, Drama<br>     Ubicación: Nueva York (Little Italy)<br>     Nota: Escenas icónicas en NYC.     </div>`)[0];
+                popup_08dcbd2dcbf096d474b44e3581c8b103.setContent(html_9224451104517342987b8a048b362c2c);
+            
+        
+
+        marker_990c61e425ecb79b1511aff2a23c0acc.bindPopup(popup_08dcbd2dcbf096d474b44e3581c8b103)
+        ;
+
+        
+    
+    
+            marker_990c61e425ecb79b1511aff2a23c0acc.bindTooltip(
+                `<div>
+                     The Godfather
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6b8695a86b6bf24972a8e41e6f550999 = L.marker(
+                [48.855341, 2.287141],
+                {
+}
+            ).addTo(map_5b2e5f4703098bd8ca729be9231253a0);
+        
+    
+        var popup_0b7aa69a6d1fb3200272524a97e27c18 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_6c226b059ff9837d1e6f784b71d509e2 = $(`<div id="html_6c226b059ff9837d1e6f784b71d509e2" style="width: 100.0%; height: 100.0%;">     <b>Inception</b><br>     Director: Christopher Nolan<br>     Año: 2010<br>     País(es): Francia / EE.UU. / Japón<br>     Género: Ciencia ficción, Acción<br>     Ubicación: París (Pont de Bir-Hakeim)<br>     Nota: La secuencia ‘doblando’ la ciudad.     </div>`)[0];
+                popup_0b7aa69a6d1fb3200272524a97e27c18.setContent(html_6c226b059ff9837d1e6f784b71d509e2);
+            
+        
+
+        marker_6b8695a86b6bf24972a8e41e6f550999.bindPopup(popup_0b7aa69a6d1fb3200272524a97e27c18)
+        ;
+
+        
+    
+    
+            marker_6b8695a86b6bf24972a8e41e6f550999.bindTooltip(
+                `<div>
+                     Inception
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_262f85c0316ce42f10cb09d1fd7656af = L.marker(
+                [34.118434, -118.300393],
+                {
+}
+            ).addTo(map_5b2e5f4703098bd8ca729be9231253a0);
+        
+    
+        var popup_29efd272bd1df4fc632aaa8dc73efd07 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c89cd75032328793a8a9bd33717097dc = $(`<div id="html_c89cd75032328793a8a9bd33717097dc" style="width: 100.0%; height: 100.0%;">     <b>La La Land</b><br>     Director: Damien Chazelle<br>     Año: 2016<br>     País(es): Estados Unidos<br>     Género: Musical, Romance<br>     Ubicación: Los Ángeles (Griffith Observatory)<br>     Nota: Escena clave en el observatorio.     </div>`)[0];
+                popup_29efd272bd1df4fc632aaa8dc73efd07.setContent(html_c89cd75032328793a8a9bd33717097dc);
+            
+        
+
+        marker_262f85c0316ce42f10cb09d1fd7656af.bindPopup(popup_29efd272bd1df4fc632aaa8dc73efd07)
+        ;
+
+        
+    
+    
+            marker_262f85c0316ce42f10cb09d1fd7656af.bindTooltip(
+                `<div>
+                     La La Land
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fef46bd50c69b832aac68c2cc38bdb94 = L.marker(
+                [-37.872087, 175.682323],
+                {
+}
+            ).addTo(map_5b2e5f4703098bd8ca729be9231253a0);
+        
+    
+        var popup_c607e0f7598ab0422402fbc2b73c0518 = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_f9ffaadc1fbce1fc332ff318d9ff291a = $(`<div id="html_f9ffaadc1fbce1fc332ff318d9ff291a" style="width: 100.0%; height: 100.0%;">     <b>The Lord of the Rings: The Fellowship of the Ring</b><br>     Director: Peter Jackson<br>     Año: 2001<br>     País(es): Nueva Zelanda<br>     Género: Fantasía, Aventura<br>     Ubicación: Matamata (Hobbiton Movie Set)<br>     Nota: Localización de Hobbiton.     </div>`)[0];
+                popup_c607e0f7598ab0422402fbc2b73c0518.setContent(html_f9ffaadc1fbce1fc332ff318d9ff291a);
+            
+        
+
+        marker_fef46bd50c69b832aac68c2cc38bdb94.bindPopup(popup_c607e0f7598ab0422402fbc2b73c0518)
+        ;
+
+        
+    
+    
+            marker_fef46bd50c69b832aac68c2cc38bdb94.bindTooltip(
+                `<div>
+                     The Lord of the Rings: The Fellowship of the Ring
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d9479bd7451d358130ad6de918cd1b02 = L.marker(
+                [-13.163141, -72.544963],
+                {
+}
+            ).addTo(map_5b2e5f4703098bd8ca729be9231253a0);
+        
+    
+        var popup_17a4d17e257a252b0e33976b379f9e0b = L.popup({
+  "maxWidth": 350,
+});
+
+        
+            
+                var html_c2b07b92227f2dc2edd509dc7b590911 = $(`<div id="html_c2b07b92227f2dc2edd509dc7b590911" style="width: 100.0%; height: 100.0%;">     <b>The Motorcycle Diaries</b><br>     Director: Walter Salles<br>     Año: 2004<br>     País(es): Perú / Argentina / Chile / Brasil<br>     Género: Biográfica, Aventura<br>     Ubicación: Cusco / Machu Picchu<br>     Nota: Tramo andino de la ruta.     </div>`)[0];
+                popup_17a4d17e257a252b0e33976b379f9e0b.setContent(html_c2b07b92227f2dc2edd509dc7b590911);
+            
+        
+
+        marker_d9479bd7451d358130ad6de918cd1b02.bindPopup(popup_17a4d17e257a252b0e33976b379f9e0b)
+        ;
+
+        
+    
+    
+            marker_d9479bd7451d358130ad6de918cd1b02.bindTooltip(
+                `<div>
+                     The Motorcycle Diaries
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            tile_layer_5fd2f23144324375d14ab20d4d359285.addTo(map_5b2e5f4703098bd8ca729be9231253a0);
+        
+</script>
+</html>
