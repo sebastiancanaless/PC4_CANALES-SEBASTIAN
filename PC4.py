@@ -83,14 +83,11 @@ if pagina_seleccionada == 'Inicio':
     # ¿Qué te gustaría hacer en el futuro?, ¿Qué te gusta hacer en tu tiempo libre?
 
     texto = """
-    Aquí escribe una presentación creativa sobre ti.
-    ¿Quién eres?, 
-    ¿De dónde eres?, 
-    ¿Qué estudias?, 
-    ¿Qué te gusta de tu carrera?, 
-    ¿Qué te gustaría hacer en el futuro?, 
-    ¿Qué te gusta hacer en tu tiempo libre?
-    Puedes agregar un carrusel de imágenes o fotos relacionadas con tus intereses o pasatiempos.
+    Hola, Soy Sebastian, estudiante de Periodismo en la PUCP. Nací y crecí en Lima.
+    Me gusta el periodismo porque tiene un campo amplio en el cual podría especializarme, ya que aún me encuentro descubriendo mi pasión. 
+    En mi tiempo libre entreno en el gimnasio, ando en moto, escucho música y 
+    consumo bastante contenido en redes, siempre tratando de mirar todo con ojos 
+    críticos.
     """
 
     # Las comillas triples (""") en Python se utilizan para definir cadenas multilínea.
@@ -118,12 +115,17 @@ elif  pagina_seleccionada == 'Experiencia':
     # ¿Qué te gustaría hacer con la programación en el futuro? 
 
     # Agregar un  texto para la respuesta
-    texto_2 = """
-    Aquí escribe tu experiencia aprendiendo a programar. 
-    ¿Cómo te sentiste al principio?, 
-    ¿Qué te ha enseñado la programación?, 
-    ¿Qué te gusta de programar?, 
-    ¿Qué te gustaría hacer con la programación en el futuro? 
+    texto_2 = """ 
+    Cuando empecé a programar me sentí un poco perdido: veía mucho código, símbolos
+    raros y sentía que todo era muy rígido. Al comienzo me costaba entender la lógica
+    de los condicionales, los bucles y la forma en que Python “piensa” paso a paso. 
+    La programación me ha enseñado a ser más ordenado al pensar: descomponer tareas
+    complejas en pasos pequeños, escribir con claridad y comentar lo que hago para
+    que otras personas (y yo mismo en el futuro) entiendan mi código. 
+    Lo que más me gusta de programar es la sensación de construir algo desde cero
+    y verlo funcionando: una página interactiva, un gráfico, un pequeño script que
+    automatiza una tarea. Es parecido a escribir un texto, pero aquí el resultado
+    es una herramienta que responde y cambia en tiempo real.  
     """
 
     # Mostramos el texto
@@ -246,4 +248,5 @@ else:
 
         # Mostrar el mapa en Streamlit
         #st_folium(mapa_cusco, width=700, height=500)
+
     
