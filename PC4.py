@@ -141,7 +141,7 @@ elif  pagina_seleccionada == 'Experiencia':
     # En este caso, {texto_2} se reemplaza por el valor de la variable texto.
 
     # Agregamos un subtítulo para el video
-    st.markdown("<h2 style='text-align: center;'>Aquí escribe un nombre creativo para presentar tu video</h2>", unsafe_allow_html=True)
+    st.markdown("<h2 style='text-align: center;'>Explicación de la estructura condicional: IF, ELIF, ELSE</h2>", unsafe_allow_html=True)
     
     # <h2 style='text-align: center;'>Aquí escribe un nombre creativo para presentar tu video</h2>: Esta es una cadena de código HTML.
     # La etiqueta <h2> se utiliza para un encabezado de segundo nivel en una página web.
@@ -154,7 +154,7 @@ elif  pagina_seleccionada == 'Experiencia':
     # Por ejemplo, puedes agregar un emoji de video 🎥 
 
     # Agregamos un video realizado en las practicas anteriores
-    st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E")
+    st.video("https://www.youtube.com/watch?v=W2PCUAuXxGw")
     
     # st.video("https://www.youtube.com/watch?v=X_Z7d04x9-E"): Esta línea está mostrando un video en la aplicación web.
     # La función video toma como primer argumento la URL del video que se desea mostrar.
@@ -162,7 +162,7 @@ elif  pagina_seleccionada == 'Experiencia':
     # Puedes cambiar la URL por la de tu video en YouTube o en otra plataforma de video.
 
     # O creamos un botón para ir al enlace del video con button
-    st.markdown(f"<div style='text-align: center;'><a href='https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link' target='_blank'><button>Ver video</button></a></div>", unsafe_allow_html=True) 
+    #st.markdown(f"<div style='text-align: center;'><a href='https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link' target='_blank'><button>Ver video</button></a></div>", unsafe_allow_html=True) 
 
     # <div style='text-align: center;'><a href='https://drive.google.com/file/d/1REvRXSu3GuGD73w8j44135MkRiezd0gP/view?usp=drive_link' target='_blank'><button>Ver video</button></a></div>:
     # Esta es una cadena de código HTML.
@@ -185,7 +185,7 @@ else:
     st.markdown("<h1 style='text-align: center;'>Mis primeros gráficos</h1>", unsafe_allow_html=True)
 
     # Creamos una lista de gráficos
-    graficos = ['Gráfico de barras verticales de lenguas aisladas', 'Gráfico de barras de familias lingüísticas', 'Gráfico de barras horizontales de familias lingüísticas', 'mapa cusco']
+    graficos = ['Cantidad de tarjetas rojas recibidas como local por los equipos de la Liga Española', 'Resultados de partidos como local del Real Madrid', 'Resultados de partidos como visitante del Real Madrid', 'Mapa de rodajes de las películas elegidas']
 
     # Creamos un cuadro de selección en la página de gráficos
     grafico_seleccionado = st.selectbox('Selecciona un gráfico', graficos)
@@ -199,23 +199,23 @@ else:
     
 
     # Mostramos el gráfico seleccionado
-    if grafico_seleccionado == 'Gráfico de barras verticales de lenguas aisladas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("aisladas_base_datos.png", caption='Gráfico de lenguas aisladas', width=500)
+    if grafico_seleccionado == 'Cantidad de tarjetas rojas recibidas como local por los equipos de la Liga Española':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>En este gráfico de barras se puede observar la tendencia de los equipos de la Liga Espñola en cuánto al número de tarjetas rojas obtenidas cuando juega de local. Donde los equipos Alavés, Sevilla y Leganés son los más propensos a recibir esta tarjeta, mientras que el Barcelona, Osasuna y Real Madrid son los menos recurrentes a este tipo de sanción. La tendencia muestra que los equipos más grandes de La Liga son los que reciben menos tarjetas rojas, lo que podría indicar un favorecimiento por parte del arbitraje.</div>", unsafe_allow_html=True)
+        st.image("tarjetasrojas.png", caption='Tendencia de las tarjetas rojas en La Liga', width=500)
         pass
-    elif grafico_seleccionado == 'Gráfico de barras de familias lingüísticas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("lengua_familia_GB.png", caption='Gráfico de familias lingüísticas', width=500)
+    elif grafico_seleccionado == 'Resultados de partidos como local del Real Madrid':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí claramente se aprecia una superioridad absoluta frente a sus rivales, lo cual da cuenta de que en el Bernabeu este equipo prácticamente invencible. Si eres un equipo visitante, el mejor resultado posible que podrías obtener aquí sería un empate, ya que la tendnencia sería perder. Es notorio que la hinchada del Real Madrid es muy apasionada y siempre van a alentar cada fin de semana.</div>", unsafe_allow_html=True)
+        st.image("madridlocal.png", caption='Pie chart que evidencia la tendencia del Real Madrid jugando como local', width=500)
         pass
-    elif grafico_seleccionado == 'Gráfico de barras horizontales de familias lingüísticas':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu gráfico</div>", unsafe_allow_html=True)
-        st.image("lengua_familia_GB.png", caption='Gráfico de familias lingüísticas', width=500)
+    elif grafico_seleccionado == 'Resultados de partidos como visitante del Real Madrid':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>En el caso del Madrid como visitante, la cosa es más pareja... En este caso se ve que aun siendo el Madrid, tiene problemas para salir victorioso cuando va de visita, lo cual indica que el equipo no pasa por un buen momento, ya que en temporadas anteriores ha sido casi invencible. Esto habla de, quizás, una falta de temple en los jugadores, quienes actualmente no están jugando a la altura. Por otro lado, también habla de un nivel mucho más competitivo en la Liga, en el cual cada equipo puede presentarse de igual a igual cuando juega de local.</div>", unsafe_allow_html=True)
+        st.image("madridvisitante.png", caption='Pie chart que evidencia la tendencia del Real Madrid jugando como visitante', width=500)
         pass
-    elif grafico_seleccionado == 'mapa cusco':
-        st.markdown("<div style='text-align: justify; font-size: 20px;'>Aquí debe ir una breve interpretación de tu mapa</div>", unsafe_allow_html=True)
+    elif grafico_seleccionado == 'Mapa de rodajes de las películas elegidas':
+        st.markdown("<div style='text-align: justify; font-size: 20px;'>En este mapa podemos apreciar la ubicación de diferentes películas muy famosas lanzadas en Hollywood. El mapa muestra lo variado y recóndito que puede requerir filmar ciertas películas. A su vez, es interesante para cualquier fanático de una de ellas, que puede recurrir aquí por curiosidad para conocer en dónde fue filmada su película favorita. </div>", unsafe_allow_html=True)
         # Si "mapa_cusco.html" es un archivo HTML (no una imagen), debes mostrarlo con st.components.v1.html
         import streamlit.components.v1 as components
-        with open("mapa_cusco.html", "r", encoding="utf-8") as f:
+        with open("mapa_peliculas.html", "r", encoding="utf-8") as f:
             html_content = f.read()
         components.html(html_content, height=500)
         pass
